@@ -28,9 +28,9 @@ app.set("view engine", "handlebars");
 //   process.env.DB +
 //   "?retryWrites=true&w=majority&appName=Cluster0";
 
-const dbURI = `mongodb+srv://${process.env.DBUSER}:${process.env.DBPASSWD}@${process.env.CLUSTER}.mongodb.net/${process.env.DB}?retryWrites=true&w=majority&appName=Cluster0`;
+// const dbURI = `mongodb+srv://${process.env.DBUSER}:${process.env.DBPASSWD}@${process.env.CLUSTER}.mongodb.net/${process.env.DB}?retryWrites=true&w=majority&appName=Cluster0`;
 
-mongoose.connect(dbURI);
+// mongoose.connect(dbURI);
 
 const Product = require("./models/Product");
 

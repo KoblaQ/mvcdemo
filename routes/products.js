@@ -12,14 +12,14 @@ const productController = require("../controllers/productController");
 
 // mongoose.connect(dbURI);
 
-const Product = require("../models/Product");
+// const Product = require("../models/Product");
 
 router.get("/", productController.getHome);
 // router.get("/", async (req, res) => {
 //   //   res.send("My MVC App");
 // });
 
-router.get("/product(:id", productController.getProductDetails);
+router.get("/products/:id", productController.getProductDetails);
 // router.get("/products/:id", async (req, res) => {
 //   //   try {
 //   //     const id = req.params.id;
